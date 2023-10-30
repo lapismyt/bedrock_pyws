@@ -12,18 +12,14 @@ async def block_broken(ctx):
 
 @app.game_event
 async def item_used(ctx):
-    await ctx.server.run(f"say Использовали предмет (мне лень писать какой)")
+    await ctx.server.run("say Использовали предмет (мне лень писать какой)")
 
 @app.game_event
 async def portal_built(ctx):
-    await ctx.server.run(f"say Портал был построен")
-
-@app.game_event
-async def player_message(ctx):
-    await ctx.server.run(f"say Сообщение отправлено игроком {ctx.sender}")
+    await ctx.server.run("say Портал был построен")
 
 @app.game_event
 async def item_dropped(ctx):
-    await ctx.server.run(f"say Уронили предмет. Не мыло(")
+    await ctx.server.run("say Уронили предмет. Не мыло(")
 
 app.start("lapismyt.space", 6464)
