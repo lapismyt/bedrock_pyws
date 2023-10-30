@@ -8,7 +8,7 @@ async def ready(ctx):
 
 @app.game_event
 async def block_broken(ctx):
-    await ctx.server.run(f"say Сломан блок {ctx.id} игроком {ctx.player}")
+    await ctx.server.run(f"say Сломан блок {ctx.id} игроком {ctx.player.name}")
 
 @app.game_event
 async def item_used(ctx):
