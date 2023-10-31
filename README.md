@@ -1,1 +1,1 @@
-Run : `python -m bedrock_pyws`
+Run: `python -m bedrock_pyws`
